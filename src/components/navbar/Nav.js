@@ -33,6 +33,7 @@ function Nav() {
             <div className='w-full flex justify-end gap-4 pr-12 items-center'>
                 <a href="/">Home</a>
                 <a href="/booklist">Booklist</a>
+                <a href="/pnr">PNR Status</a>
                 {user ? "" : <a href='/signup'>Sign Up</a>}
                 {user ? <a href="" onClick={logout}>Log out</a>: ""}
                 <a href="/profile" className='text-3xl'><FaRegUserCircle /></a>

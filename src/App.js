@@ -15,6 +15,8 @@ import Ticketdetail from './components/ticketdetail/Ticketdetail';
 import Search from './components/search/Search';
 import Bookingticket from './components/ticketdetail/Bookingticket';
 import ResultTickets from './components/ticketdetail/ResultTickets';
+import PNRComponent from "./components/IRCTC/PNRComponent";
+
 
 function App() {
   return (
@@ -54,6 +56,11 @@ function App() {
           <Route path='/booklist' element={
             <ProtectedRoute>
               <Booklist/>
+            </ProtectedRoute>
+          }/>
+          <Route path='/pnr' element={
+            <ProtectedRoute>
+              <PNRComponent/>
             </ProtectedRoute>
           }/>
         </Routes>
